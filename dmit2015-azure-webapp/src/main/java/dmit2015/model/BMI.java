@@ -7,6 +7,6 @@ public class BMI{
     private int height;
 
     public double bmi(){
-        return (703*weight)/ M
+        return (703*weight)/ Math.pow(height,2)
     }
         }
