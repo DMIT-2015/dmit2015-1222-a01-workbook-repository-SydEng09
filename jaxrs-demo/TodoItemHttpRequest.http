@@ -1,0 +1,45 @@
+### Get all TodoItems
+GET http://localhost:8080/restapi/TodoItems
+
+### Get a single TodoItem with an id of 1
+GET http://localhost:8080/restapi/TodoItems/1
+
+### POST a new TodoItem with valid data
+POST http://localhost:8080/restapi/TodoItems
+Content-Type: application/json
+Authorization: Bearer eyJraWQiOiJxdWlja3N0YXJ0LWp3dC1pc3N1ZXIiLCJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJETEVFIiwidXBuIjoiRExFRSIsImlzcyI6InF1aWNrc3RhcnQtand0LWlzc3VlciIsImF1ZCI6Imp3dC1hdWRpZW5jZSIsImdyb3VwcyI6WyJTYWxlcyJdLCJqdGkiOiJjZDYzMzQwMy1jNWEyLTQ5ODQtODMwYi1hN2E3YWI0OTdlNTYiLCJpYXQiOjE2ODAxODk2OTQsImV4cCI6MTY4MDIwNDA5NH0.XlkY2p16Q0ed8Qsz3X5CSvuBRIeQVPGW8_zZsct5LEZOvuO3T9MdFQe9yG3XEdeEGUAA4OWNA2EGRi139ehxhVSAY7JrdjwfDPL4PI0ttCiE3xL8W8UG-GP40gkFGNZyFvrMgrpt4OGGfOtDm3GxJZnl2mBIOZXs9y9KEtSNEPSLrP2UIebWHtcBTyz_kvM1R5Uv6No_TwDFhkhVykr6QW9ZDd76iNA-WyOIZ_5dE8fK4joUWqD6fYdKu5rHeE_wQb1nGSUx0B7t0K_Lsb668806dhL3X0vuf0RUTlBqjCpYNTqHCD6xDNwADVZE3nOhVaYbrBLIOI0vwuTmgiqHrg
+
+{
+  "name": "Start DMIT2015 Assignment 3",
+  "complete": false
+}
+
+### Post a new TodoItem with invalid data
+POST http://localhost:8080/restapi/TodoItems
+Content-Type: application/json
+
+{
+  "name": "     ",
+  "complete": false
+}
+
+### Get a single TodoItem with an id of 4
+GET http://localhost:8080/restapi/TodoItems/4
+
+### Update TodoItem with an id of 4 with valid data
+PUT http://localhost:8080/restapi/TodoItems/4
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "Commit DMIT2015 Assignment 3",
+  "complete": true,
+  "version": 0
+}
+
+### Delete an TodoItem with an id of 2
+DELETE http://localhost:8080/restapi/TodoItems/2
+
+### Delete an TodoItem with an id of 4
+DELETE http://localhost:8080/restapi/TodoItems/5
+Authorization: Bearer eyJraWQiOiJxdWlja3N0YXJ0LWp3dC1pc3N1ZXIiLCJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJEQVVTVElOIiwidXBuIjoiREFVU1RJTiIsImlzcyI6InF1aWNrc3RhcnQtand0LWlzc3VlciIsImF1ZCI6Imp3dC1hdWRpZW5jZSIsImdyb3VwcyI6WyJJVCJdLCJqdGkiOiJkOTg4ZGExYy02YWM0LTQyYWMtOTVjMC05ZDI5M2Y2NGJkYjQiLCJpYXQiOjE2ODAxODk4NzUsImV4cCI6MTY4MDIwNDI3NX0.VWVejwSIfvLVirx2lB8zhrSrTd3vqMr-tHUJ8k-P5PdC1ut0YW8781xVXie3KpROyNiUjnLTlnOGxLZTUxEtm6VcYsVvpmrW0LbEkA2Sz2d3UWZApg8yd3fG-8EZbZ-RzscW3UIK9VfiqAq-lGFFNXUSuuMc8PbeDMTh_ay9NmIGCBB1gI3h7rX1WGAEmasMhFoLfOJfJAzVJvTz83yH6ekLqqDFFjK0zQBpY74QoVrRFXhGQr9KwGvzFRZBwgFSQPEtPg2R7CI7yloNcWbsNcOkN1HoJ1QByo48V6v0_QlF6jxrLNEZz1fXv2b4yDUfLxpDDRVe07_Z2_yMN2m4Vg
